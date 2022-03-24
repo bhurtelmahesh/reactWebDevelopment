@@ -1,6 +1,7 @@
-const page = (
+const MyPage = () => {
+    return(
     <div>
-        <img src="react.png" alt="React Logo" width="60px" position='absolute' />
+        <img src="react.png" alt="React Logo" width="60px" />
         <h1> Fun Facts About React</h1>
         <ul>
             <li>Was first released in 2013</li>
@@ -10,6 +11,8 @@ const page = (
             <li>Powers thousands of enterprise apps, including mobile apps</li>
         </ul>
     </div>
-)
+    );
+}
 
-ReactDOM.render(page, document.querySelector('#root'));
+
+ReactDOM.render(<MyPage />, document.querySelector('#root'));
