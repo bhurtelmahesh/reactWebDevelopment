@@ -1,9 +1,15 @@
-//ReactDOM.render(<h1>Hello, World!</h1>, document.getElementById('root'));
-//ReactDOM.render(<p>Hi, My Name is Maheshwor!</p>, document.querySelector('#root'));
-const MainComponent = () => {
-    return (
-        <h1>I'm Learning React!</h1>
-    );
-};
+const page = (
+    <div>
+        <img src="react.png" alt="React Logo" width="60px" position='absolute' />
+        <h1> Fun Facts About React</h1>
+        <ul>
+            <li>Was first released in 2013</li>
+            <li>Was originally created by Jordan Walke</li>
+            <li>Has well over 100K stars on GitHub</li>
+            <li>Is maintained by Meta(formerly Facebook)</li>
+            <li>Powers thousands of enterprise apps, including mobile apps</li>
+        </ul>
+    </div>
+)
 
-ReactDOM.render(<div> <MainComponent /> </div>,document.querySelector('#root'));
+ReactDOM.render(page, document.querySelector('#root'));
