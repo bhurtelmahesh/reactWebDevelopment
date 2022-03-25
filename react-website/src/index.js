@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from "./Header";
 
+import './index.css';
+
 const MyPage = () => {
     return(
     <div>
@@ -28,12 +30,10 @@ const Body = () => {
 }
 const Footer = () => {
     return(
-        <footer className="footer" >
+        <footer className='footer'>
             <p>&copy; 2022 Bhurtel Development. All  rights reserved.</p>
         </footer>
     )
 }
-
-
 
 ReactDOM.render(<MyPage />, document.querySelector('#root'));
