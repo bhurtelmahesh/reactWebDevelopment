@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Header from "./Header";
+
 const MyPage = () => {
     return(
     <div>
@@ -24,25 +28,12 @@ const Body = () => {
 }
 const Footer = () => {
     return(
-        <footer >
+        <footer className="footer" >
             <p>&copy; 2022 Bhurtel Development. All  rights reserved.</p>
         </footer>
     )
 }
-const Header = () => {
-    return(
-        <header>
-        <nav>
-            <img src="react.png" alt="React Logo" width="60px" />
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>       
-        </nav>
-    </header>
-    );
-}
+
 
 
 ReactDOM.render(<MyPage />, document.querySelector('#root'));
